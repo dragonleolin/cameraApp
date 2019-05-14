@@ -11,26 +11,33 @@
 		<link rel="stylesheet" href="style.css"> 
 	</head>
 	<body>
+		<div class="table">
+            <div class="tableRow">
+                <div class="tableCell">
+					<input type="file" id="file" accept="image/*" capture>
+                </div>
+                <div class="tableCell" id="fileInfo">
 
-		<!-- Camera -->
-		<main id="camera">
 
-		    <!-- Camera sensor -->
-		    <canvas id="camera--sensor"></canvas>
-		    
-		    <!-- Camera view -->
-			<video id="camera--view" autoplay playsinline></video>
-			
-		    
-		    <!-- Camera output -->
-		    <img src="//:0" alt="" id="camera--output">
-
-		    <!-- Camera trigger -->
-		    <button id="camera--trigger">Take a picture</button>
-
-		</main>
-
-		<!-- Reference to your JavaScript file -->
+                </div>
+            </div>
+            <div class="tableRow">
+                <div class="tableCell box">
+                    <h2>Canvas</h2>
+                    <canvas id="panel"></canvas>
+                    <br>
+                    <button id="uploadCanvas">Upload Canvas</button>
+                </div>
+                <div class="tableCell box">
+                    <h2>Image</h2>
+                    <img src="" id="uploadedImage">
+                    <br>
+                    <button id="uploadImage">Upload Image</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
 		<script src="app.js"></script> 
 	</body>
 </html>
